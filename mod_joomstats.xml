@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+  <name>mod_joomstats</name>
+  <author>JoomGallery::Project Team</author>
+  <creationDate>19.02.2013</creationDate>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <copyright>JoomGallery::Project Team</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <version>3.0 BETA</version>
+  <description>MOD_JOOMSTATS_DESC</description>
+  <files>
+    <filename module="mod_joomstats">mod_joomstats.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <filename>changelog.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <languages>
+    <language tag="de-DE">language/de-DE/de-DE.mod_joomstats.ini</language>
+    <language tag="de-DE">language/de-DE/de-DE.mod_joomstats.sys.ini</language>
+    <language tag="en-GB">language/en-GB/en-GB.mod_joomstats.ini</language>
+    <language tag="en-GB">language/en-GB/en-GB.mod_joomstats.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="moduleclass_sfx" type="text" label="MOD_JOOMSTATS_MODULE_CLASS_SUFFIX_LBL" description="MOD_JOOMSTATS_MODULE_CLASS_SUFFIX_DESC" />
+        <field name="layout" type="modulelayout" default="default" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+        <field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+        </field>
+        <field class="btn-group" name="all_pics" type="radio" default="1" description="MOD_JOOMSTATS_PICS_DESC" label="MOD_JOOMSTATS_PICS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_picstext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="all_cats" type="radio" default="0" description="MOD_JOOMSTATS_CATS_DESC" label="MOD_JOOMSTATS_CATS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_catstext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="all_hits" type="radio" default="0" description="MOD_JOOMSTATS_HITS_DESC" label="MOD_JOOMSTATS_HITS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_hitstext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="all_comments" type="radio" default="0" description="MOD_JOOMSTATS_COMMENTS_DESC" label="MOD_JOOMSTATS_COMMENTS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_commentstext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="all_votes" type="radio" default="0" description="MOD_JOOMSTATS_VOTES_DESC" label="MOD_JOOMSTATS_VOTES_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_votestext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="all_nametags" type="radio" default="0" description="MOD_JOOMSTATS_NAMETAGST_DESC" label="MOD_JOOMSTATS_NAMETAGS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="all_nametagstext" type="text" size="40" description="MOD_JOOMSTATS_LEADTXT_DESC" label="MOD_JOOMSTATS_LEADTXT_LBL"/>
+        <field class="btn-group" name="debug" type="radio" default="0" label="MOD_JOOMSTATS_DEBUG_LBL" description="MOD_JOOMSTATS_DEBUG_DESC">
+          <option value="0">JOFF</option>
+          <option value="1">JON</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
