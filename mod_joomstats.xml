@@ -2,12 +2,11 @@
 <extension type="module" version="3.0" client="site" method="upgrade">
   <name>mod_joomstats</name>
   <author>JoomGallery::Project Team</author>
-  <creationDate>19.02.2013</creationDate>
-  <authorEmail>team@joomgallery.net</authorEmail>
-  <authorUrl>www.joomgallery.net</authorUrl>
+  <creationDate>2019/04/15</creationDate>
+  <authorUrl>www.joomgalleryfriends.net</authorUrl>
   <copyright>JoomGallery::Project Team</copyright>
   <license>This module is released under the GNU/GPL License</license>
-  <version>3.0 BETA</version>
+  <version>3.0.0</version>
   <description>MOD_JOOMSTATS_DESC</description>
   <files>
     <filename module="mod_joomstats">mod_joomstats.php</filename>
