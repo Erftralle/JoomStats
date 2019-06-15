@@ -1,6 +1,6 @@
 <?php
 /****************************************************************************************\
-**   Module JoomGalleryStats for JoomGallery                                            **
+**   Module JoomStats for JoomGallery                                                   **
 **   By: JoomGallery::ProjectTeam                                                       **
 **   Released under GNU GPL Public License                                              **
 **   License: http://www.gnu.org/copyleft/gpl.html or have a look                       **
@@ -10,7 +10,7 @@ defined('_JEXEC') or die('Restricted access');
 
 /**
  *
- * Helper class for module JoomGalleryStats
+ * Helper class for module JoomStats
  *
  */
 class modJoomStatsHelper
@@ -19,9 +19,12 @@ class modJoomStatsHelper
    *
    * Get parameters from backend, prepare and execute the database queries,
    * and fill an array for later output in template
-   * @param $params
-   * @param $debugmode   boolean true to output the database query and the
-   *                             database error text if existent
+   *
+   * @param \Joomla\Registry\Registry   &$params    object holding the models parameters$params
+   * @param boolean                     $debugmode  true to output the database query and the
+   *                                                database error text if existent
+	 * @return array   array of objects containing the statitics
+   *
    */
   public static function getList(&$params, &$debugmode)
   {

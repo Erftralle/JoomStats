@@ -1,6 +1,6 @@
 <?php
 /****************************************************************************************\
-**   Module JoomGalleryStats for JoomGallery                                            **
+**   Module JoomStats for JoomGallery                                                   **
 **   By: JoomGallery::ProjectTeam                                                       **
 **   Released under GNU GPL Public License                                              **
 **   License: http://www.gnu.org/copyleft/gpl.html or have a look                       **
@@ -8,7 +8,7 @@
 \****************************************************************************************/
 defined( '_JEXEC' ) or die( 'Direct Access to this location is not allowed.' );
 ?>
-CHANGELOG Module JoomStats 2.0 BETA for JoomGallery
+CHANGELOG Module JoomStats for JoomGallery
 
 Legende / Legend:
 
@@ -20,6 +20,10 @@ Legende / Legend:
 ! -> Note
 
 -------------------------------------------------------------------
+Version 3.x.x
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
 Version 3.0 BETA
 -------------------------------------------------------------------
 20120903
@@ -29,7 +33,7 @@ Version 3.0 BETA
 + Small code adaptions (deprecated functions)
 
 -------------------------------------------------------------------------------
-MOD_JOOMSTATS version: 2.0 BETA
+Version: 2.0 BETA
 -------------------------------------------------------------------------------
 20120910
 ! Release of JoomStats 2.0 BETA
