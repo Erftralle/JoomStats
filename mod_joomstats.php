@@ -1,6 +1,4 @@
 <?php
-// $HeadURL: https://joomgallery.org/svn/joomgallery/JG-3/Modules/JoomStats/trunk/mod_joomstats.php $
-// $Id: mod_joomstats.php 4104 2013-02-19 16:53:27Z erftralle $
 /****************************************************************************************\
 **   Module JoomGalleryStats for JoomGallery                                            **
 **   By: JoomGallery::ProjectTeam                                                       **
