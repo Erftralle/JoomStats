@@ -8,9 +8,30 @@
 \****************************************************************************************/
 defined('_JEXEC') or die('Restricted access');
 
-require_once dirname(__FILE__).'/helper.php';
+$jg_installed  = null;
+$jg_ifpath     = JPATH_ROOT.'/components/com_joomgallery/interface.php';
+$jg_minversion = '3.0';
 
-$debugmode  = $params->get('debug', 0);
-$list       = modJoomStatsHelper::getList($params, $debugmode);
+if(file_exists($jg_ifpath))
+{
+  // Include JoomGallery's interface class
+  require_once $jg_ifpath;
+
+  // Include the helper functions only once
+  require_once dirname(__FILE__).'/helper.php';
+
+  // Create an instance of the helper object
+  $helperObject = new modJoomStatsHelper();
+
+  // Check gallery version
+  if(version_compare($helperObject->getGalleryVersion(), $jg_minversion, '>='))
+  {
+    // Correct version of JoomGallery seems to be installed
+    $jg_installed = true;
+
+    $debugmode  = $params->get('debug', 0);
+    $list       = $helperObject->getList($params, $debugmode);
+  }
+}
 
 require JModuleHelper::getLayoutPath('mod_joomstats', $params->get('layout', 'default'));
