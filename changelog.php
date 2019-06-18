@@ -22,6 +22,13 @@ Legende / Legend:
 -------------------------------------------------------------------
 Version 3.x.x
 -------------------------------------------------------------------
+20190618
++ Consideration of access rights and states when generating statistics
++ Add an update server
+
+20190615
+- Remove old SVN tags
+^ Fix code style and doc blocks
 
 -------------------------------------------------------------------
 Version 3.0 BETA
