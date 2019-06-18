@@ -68,4 +68,7 @@
       </fieldset>
     </fields>
   </config>
+  <updateservers>
+    <server type="collection" priority="1" name="JoomGallery Update Service">https://www.joomgalleryfriends.net/components/com_newversion/xml/extensions3.xml</server>
+  </updateservers>
 </extension>
