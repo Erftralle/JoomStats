@@ -1,8 +1,6 @@
 <?php
-// $HeadURL: https://joomgallery.org/svn/joomgallery/JG-3/Modules/JoomStats/trunk/changelog.php $
-// $Id: changelog.php 4104 2013-02-19 16:53:27Z erftralle $
 /****************************************************************************************\
-**   Module JoomGalleryStats for JoomGallery                                            **
+**   Module JoomStats for JoomGallery                                                   **
 **   By: JoomGallery::ProjectTeam                                                       **
 **   Released under GNU GPL Public License                                              **
 **   License: http://www.gnu.org/copyleft/gpl.html or have a look                       **
@@ -10,7 +8,7 @@
 \****************************************************************************************/
 defined( '_JEXEC' ) or die( 'Direct Access to this location is not allowed.' );
 ?>
-CHANGELOG Module JoomStats 2.0 BETA for JoomGallery
+CHANGELOG Module JoomStats for JoomGallery
 
 Legende / Legend:
 
@@ -22,6 +20,17 @@ Legende / Legend:
 ! -> Note
 
 -------------------------------------------------------------------
+Version 3.x.x
+-------------------------------------------------------------------
+20190618
++ Consideration of access rights and states when generating statistics
++ Add an update server
+
+20190615
+- Remove old SVN tags
+^ Fix code style and doc blocks
+
+-------------------------------------------------------------------
 Version 3.0 BETA
 -------------------------------------------------------------------
 20120903
@@ -31,7 +40,7 @@ Version 3.0 BETA
 + Small code adaptions (deprecated functions)
 
 -------------------------------------------------------------------------------
-MOD_JOOMSTATS version: 2.0 BETA
+Version: 2.0 BETA
 -------------------------------------------------------------------------------
 20120910
 ! Release of JoomStats 2.0 BETA
