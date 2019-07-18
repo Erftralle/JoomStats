@@ -20,7 +20,7 @@ Legende / Legend:
 ! -> Note
 
 -------------------------------------------------------------------
-Version 3.x.x
+Version 3.0.1
 -------------------------------------------------------------------
 20190618
 + Consideration of access rights and states when generating statistics
